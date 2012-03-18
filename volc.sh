@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # OSX command line volume cotroler
 
@@ -9,13 +9,10 @@ usage: `basename $0` [max,mute,0..100]
 EOF
 }
 
-
-expr "$1 + 1" 2>/dev/null 1>/dev/null
-if [ $? = 0 ]
-then
+if [ $1 -eq $1 2> /dev/null ]; then
     osascript -e "set volume output volume $1"
 else
-case "$1" in
+case $1 in
     max)
         osascript -e 'set volume output volume 100'
         ;;
