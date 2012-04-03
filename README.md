@@ -7,3 +7,4 @@ Scripts
 -------
 **radium.sh**: simple play/stop for [Radium.app](http://www.catpigstudios.com/radium/)
 **volc.sh**: volume cotroll
+**lock.sh**: lock screen
