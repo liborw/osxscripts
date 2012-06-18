@@ -2,6 +2,7 @@
 
 # OSX command line volume cotroler
 
+hash osascript 2>/dev/null && {
 
 usage() {
 cat <<EOF
@@ -25,4 +26,4 @@ case $1 in
 esac
 fi
 
-
+}

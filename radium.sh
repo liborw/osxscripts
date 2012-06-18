@@ -2,6 +2,8 @@
 
 # Command line controll of radium app
 
+# Check for MAC OSX
+hash osascript 2>/dev/null && {
 
 usage () {
 cat <<EOF
@@ -22,3 +24,5 @@ case $1 in
     *)  osascript -e 'tell app "Radium" to playPause player'
         ;;
 esac
+
+}
